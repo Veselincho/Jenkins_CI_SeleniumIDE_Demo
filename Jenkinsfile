@@ -39,7 +39,7 @@ pipeline {
             //Run tests => u dont say lol
             steps {
                 //running tests and generating trx file with results
-                bat 'dotnet test SeleniumIde.sln -logger "trx;LogFileName=TestResults.trx"'
+                bat 'dotnet test SeleniumIde.sln --logger "trx;LogFileName=TestResults.trx"'
             }
         }
     }
